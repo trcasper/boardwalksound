@@ -1,0 +1,62 @@
+$BWOrange: rgb(255, 185, 2);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+.Landing {
+//   height: 100vh;
+  background-color: rgb(59, 59, 59);
+}
+
+.Intro {
+    height: 100vh;
+}
+
+.Title {
+  height: 25vh;
+  background-color: $BWOrange;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20vh;
+}
+
+.MusicLogoBox {
+  height: 25vh;
+}
+
+.MusicLogo {
+  height: 100%;
+}
+
+.LinksContainer {
+  height: 10vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.IntroPicContainer {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+}
+
+.BoardwalkOne {
+    height: 100%;
+    width: 100vh;
+    object-fit: cover;
+}
+
+//////
+
+#About {
+    height: 100vh;
+    background-color: grey;
+}
