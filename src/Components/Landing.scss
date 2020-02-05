@@ -1,4 +1,6 @@
-$BWOrange: rgb(255, 185, 2);
+$Orange: rgb(255, 185, 2);
+$DarkGrey: rgb(46, 46, 46);
+$LightGrey: rgb(71, 71, 71);
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
@@ -8,21 +10,22 @@ $BWOrange: rgb(255, 185, 2);
 }
 
 .Landing {
-//   height: 100vh;
+  //   height: 100vh;
   background-color: rgb(59, 59, 59);
 }
 
-.Intro {
-    height: 100vh;
+#Intro {
+  height: 100%;
 }
 
 .Title {
   height: 25vh;
-  background-color: $BWOrange;
-  font-size: 60px;
+  background-color: $Orange;
+
   display: flex;
   align-items: center;
-  padding-left: 20vh;
+  justify-content: center;
+  //   padding-left: 20vh;
 }
 
 .MusicLogoBox {
@@ -33,30 +36,50 @@ $BWOrange: rgb(255, 185, 2);
   height: 100%;
 }
 
-.LinksContainer {
-  height: 10vh;
-  background-color: gray;
+.TitleText {
+  font-size: 60px;
+}
+
+.Nav {
+  height: 7vh;
+  width: 100%;
+  background-color: $DarkGrey;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
+  border-bottom: solid black;
+  position: sticky;
+  top: 0;
+}
+
+a {
+    color: rgb(204, 204, 204)
+  }
+
+a:hover {
+    color: $Orange;
 }
 
 .IntroPicContainer {
-    height: 65vh;
-    display: flex;
-    justify-content: center;
+  height: 68vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $LightGrey;
 }
 
 .BoardwalkOne {
-    height: 100%;
-    width: 100vh;
-    object-fit: cover;
+  height: 95%;
+  width: 100vh;
+  object-fit: cover;
 }
 
 //////
 
 #About {
-    height: 100vh;
-    background-color: grey;
+  height: 100vh;
+  background-color: $DarkGrey;
+  border-top: solid $Orange;
 }

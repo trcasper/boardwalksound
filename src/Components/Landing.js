@@ -12,29 +12,43 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="Landing">
-        <div className="Intro">
+        <div id="Intro">
           <div className="Title">
             <div className="MusicLogoBox">
               <img src={MusicLogo} className="MusicLogo" alt="MusicLogoAlt" />
             </div>
-            Boardwalk
-            <br />
-            Sound
+            <div className="TitleText">
+              Boardwalk
+              <br />
+              Sound
+            </div>
           </div>
-          <div className="LinksContainer">
-            <div id="HomeLink">Home</div>
-            <div id="AboutLink">About</div>
-            <div id="InsideLink">Inside</div>
-            <div id="ContactLink">Contact</div>
-            <div id="EventsLink">Events</div>
           </div>
+          <div className="Nav">
+            <div className="HomeLink">
+              <a href="#Intro">Home</a>
+            </div>
+            <div id="AboutLink">
+              <a href="#About">About</a>
+            </div>
+            <div id="InsideLink">
+            <a href="#Inside">Inside</a>
+            </div>
+            <div id="ContactLink">
+            <a href="#Contact">Contact</a>
+            </div>
+            <div id="EventsLink">
+            <a href="#Events">Events</a>
+            </div>
+          </div>
+
           <div className="IntroPicContainer">
             <img
               className="BoardwalkOne"
               src={BoardwalkOne}
               alt="BoardwalkOneAlt"
             />
-          </div>
+          {/* </div> */}
         </div>
         <div id="About"></div>
       </div>
