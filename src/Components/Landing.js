@@ -32,10 +32,10 @@ class Landing extends React.Component {
               <a href="#About">About</a>
             </div>
             <div id="InsideLink">
-            <a href="#Inside">Inside</a>
+            <a href="#InsideScroll">Inside</a>
             </div>
             <div id="ContactLink">
-            <a href="#Contact">Contact</a>
+            <a href="#ContactScroll">Contact</a>
             </div>
             <div id="EventsLink">
             <a href="#Events">Events</a>
@@ -50,7 +50,23 @@ class Landing extends React.Component {
             />
           {/* </div> */}
         </div>
-        <div id="About"></div>
+        <div id="About">
+            {/* <div className="AboutTitle">About</div> */}
+            <div className="AboutContent">
+                <div className="AboutHeadlineOne">Great Sound, Great Staff,<br/>Book Your Event!</div>
+
+                <div className="AboutInfo">Our Professionally designed venue was created by Logan Casper and Braxton Nelson.  It was constructed in 2020 to bring a state of the art sound to the local music scene.  With the gear and flexibility to accommodate any type of event it is perfect for concerts, parties, or gatherings at a central location in Utah Valley. The staff is friendly and happy to help bring your vision to life.</div>
+                
+            </div>
+        </div>
+        <div id="InsideScroll"></div>
+        <div className="Inside">
+            <div className="InsideHeadline">Take a look Inside.</div>
+        </div>
+        <div id="ContactScroll"></div>
+        <div className="Contact">
+            <div className="ContactHeadline">Contact Us Now!</div>
+        </div>
       </div>
     );
   }

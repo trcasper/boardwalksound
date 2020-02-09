@@ -1,6 +1,8 @@
 $Orange: rgb(255, 185, 2);
 $DarkGrey: rgb(46, 46, 46);
-$LightGrey: rgb(71, 71, 71);
+$LightGrey: rgb(59, 59, 59);
+$White: rgb(204, 204, 204);
+$Blue: rgb(72, 177, 196);
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
@@ -11,7 +13,7 @@ $LightGrey: rgb(71, 71, 71);
 
 .Landing {
   //   height: 100vh;
-  background-color: rgb(59, 59, 59);
+  background-color: $LightGrey;
 }
 
 #Intro {
@@ -44,18 +46,18 @@ $LightGrey: rgb(71, 71, 71);
   height: 7vh;
   width: 100%;
   background-color: $DarkGrey;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
-  border-bottom: solid black;
+  border-bottom: solid rgb(36, 36, 36);
+  box-sizing: border-box;
   position: sticky;
   top: 0;
 }
 
 a {
-    color: rgb(204, 204, 204)
+    color: rgb(72, 177, 196)
   }
 
 a:hover {
@@ -79,7 +81,86 @@ a:hover {
 //////
 
 #About {
-  height: 100vh;
+  height: 93vh;
   background-color: $DarkGrey;
   border-top: solid $Orange;
+  box-sizing: border-box;
+}
+
+.AboutTitle {
+    // height: 10vh;
+    // margin-top: 7vh;
+    // font-size: 30px;
+    // @include flex(center, center, center);
+    // text-decoration: underline;
+    // color: $Blue;
+
+}
+
+.AboutContent {
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.AboutHeadlineOne {
+    height: 40vh;
+    @include flex(center, center, center);
+    font-size: 45px;
+    text-align: center;
+    color: $Orange;
+}
+
+
+
+.AboutInfo {
+    height: 43vh;
+    // background-color: gray;
+    padding-top: 5vh;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    text-align: center;
+    font-size: 20px;
+    color: $White;
+}
+
+///
+
+#InsideScroll {
+    height: 7vh;
+    background-color: $DarkGrey;
+    border-bottom: solid $Orange;
+    box-sizing: border-box;
+}
+
+
+.Inside {
+    height: 93vh;
+}
+
+.InsideHeadline {
+    height: 20vh;
+    color: $Blue;
+    @include flex (center, center, center);
+    font-size: 45px;
+}
+
+#ContactScroll {
+    height: 7vh;
+    border-bottom: solid $Orange;
+    box-sizing: border-box;
+}
+
+.Contact {
+    height: 93vh;
+    background-color: $DarkGrey;
+}
+
+.ContactHeadline {
+    height: 20vh;
+    color: $Orange;
+    @include flex (center, center, center);
+    font-size: 45px;
 }
